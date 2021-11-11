@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+        <meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		
+		<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+		
+		<title>CSJ's PORTFOLIO</title>
+	</head>
+	
+	<body class="body">
+		<div class="background">
+			<div class="title_wrapper">
+				<div class="title">
+					CSJ's <br>
+					PORTFOLIO
+				</div>
+			</div>
+			<img src="my_photo.jpg" class="background_img" />
+		</div>
+		<!-- 레이어를 나눌예정 -->
+		
+		<div class="main">
+			<div class="menu_container">
+				
+				<div class="about_me">
+					<a href="#about_me_content">ABOUT ME</a>
+				</div>
+				
+				<div class="skills">
+					<a href="#skills_content">SKILLS</a>
+				</div>
+				
+				<div class="portfolio">
+					<a href="#portfolio_content">PORTFOLIO</a>
+				</div>
+
+				<div class="contact">
+					<a href="#contact_content">CONTACT</a>
+				</div>
+			</div><!--end menu_container-->
+			
+			<!--여기에 내 프로필-->
+			<div class="about_me_content" id="about_me_content">
+				학교: </br>
+				사회경험:
+			</div>
+		
+			<!-- 여기에 내 연락처-->
+			<div class="skills_content" id="skills_content">
+				내가 다뤄본것들 다 넣어</br></br></br></br>
+			</div>
+			
+			<!-- 여기에 포트폴리오 내용 추가-->
+			<div class="portfolio_content" id="portfolio_content">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a>1학년 - 쇼핑몰</a></br>
+						</div>
+						<div class="swiper-slide">
+							<a>2학년 - 핸드폰 뭐사지</a></br>
+						</div>
+						<div class="swiper-slide">
+							<a>2학년 - instagram clone</a></br>
+						</div>
+						<div class="swiper-slide">
+							<a>2학년 - 신용재 Fan app</a></br>
+						</div>
+						<div class="swiper-slide">
+							<a>3학년 - 놀면 뭐보니</a></br>
+						</div>
+					</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-scrollbar"></div>
+				</div>
+			</div>
+			
+			<!-- 여기에 내 연락처-->
+			<div class="contact_content" id="contact_content">
+				이메일: csj0502@naver.com</br>
+			</div>
+					 
+		</div><!--end main-->
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <!-- <script src="script.js"></script>
+        <script src="swiper.js"></script> -->
+        <script>
+            const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            });
+        </script>
+	</body>
+</html>

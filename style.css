@@ -1,0 +1,54 @@
+.body {
+	
+}
+.background {
+	width:100vw;
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover;
+	margin:0;
+	padding:0;
+	border:0;
+	background-size:cover;
+}
+.background_img{
+	width:100%;
+	height:100%;
+	}
+
+.title_wrapper {
+	float:right;
+	width:100%;
+	height:50vh;
+	position:absolute;
+}
+
+.title {
+	background-size:100%;
+	font-weight: bold;
+	font-size: 7vw;
+	float:right;
+	color:#FFFFFF;
+	top:60%;
+	position:relative;
+}
+
+.main {
+	
+}
+
+.menu_container{
+	width:100vw;
+	height: 10vh;
+}
+
+.about_me, .portfolio, .contact, .skills{
+	float:left;
+	width:20%;
+	text-align:center;
+	height: 100%;
+	font-size:4vw;
+	padding: 10px;
+}
+
