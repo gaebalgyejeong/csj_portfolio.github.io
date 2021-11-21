@@ -1,0 +1,13 @@
+.card {
+  display: block;
+  align-items: center;
+  width: 50vw;
+  height: 50vh;
+  background-image: url(./my_photo.jpg) no-repeat;
+}
+
+.card-hover {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=index2_css.css.map */

@@ -18,10 +18,17 @@ body{
   background: #323c41;
 }
 
+.blog-card-wrapper{
+  position: static;
+  display: block;
+  background-color: #D0BB57;
+}
+
 .blog-card{
   width: $card-width;
   height: $card-height;
   position: absolute;
+  display: block;
   top: 50%;
   left: 50%;
   margin: -250px 0 0 -175px;
@@ -141,10 +148,14 @@ hr{
     font-family: 'Roboto', sans-serif;
     
     &.comments{
-      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/icon-chat.svg) no-repeat 0 .1em;
+      background: url(https://cdn-icons-png.flaticon.com/512/747/747944.png) no-repeat 0 .2em;
     }
     &.date{
       background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/icon-calendar.svg) no-repeat 0 .1em;
     }
+  }
+
+  .main-content{
+    display: block;
   }
 }

@@ -10,10 +10,17 @@ body {
   background: #323c41;
 }
 
+.blog-card-wrapper {
+  position: static;
+  display: block;
+  background-color: #D0BB57;
+}
+
 .blog-card {
   width: 350px;
   height: 500px;
   position: absolute;
+  display: block;
   top: 50%;
   left: 50%;
   margin: -250px 0 0 -175px;
@@ -132,10 +139,13 @@ hr {
   font-family: "Roboto", sans-serif;
 }
 .utility-list li.comments {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/icon-chat.svg) no-repeat 0 0.1em;
+  background: url(https://cdn-icons-png.flaticon.com/512/747/747944.png) no-repeat 0 0.2em;
 }
 .utility-list li.date {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/icon-calendar.svg) no-repeat 0 0.1em;
+}
+.utility-list .main-content {
+  display: block;
 }
 
 /*# sourceMappingURL=output_css.css.map */
