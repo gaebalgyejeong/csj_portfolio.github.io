@@ -1,13 +1,138 @@
-.card {
-  display: block;
-  align-items: center;
-  width: 50vw;
-  height: 50vh;
-  background-image: url(./my_photo.jpg) no-repeat;
+.body{
+  margin: 0;
+  padding: 0;
 }
 
-.card-hover {
+.card_container{
+  background: #323c41;
+  width:100vw;
+  height:100vh;
+  align-content: center;
+  position:relative;
+}
+
+.card_background{
+  background-image: url("./my_photo.jpg");
+  border-radius: 10%;
+  background-size: cover;
+  background-position: center;
+  width: 50vh;
+  height:50vh;
+  position:relative;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+
+.card_description{
+  opacity: 0%;
+  color: #D0BB57;
+}
+
+.card_background:hover{
+  opacity: 20%;
+  transition: 0.5s;
+}
+.card_background:hover .card_description{
+  opacity: 100%;
+  transition: 0.5s;
+  font-size: 2em;
+}
+.card_background:hover .card_title{
+  opacity: 0%;
+  transition: 0.5s;
+}
+
+.card_background:not(:hover){
+  opacity: 100%;
+  transition: 0.5s;
+}
+.card_background:not(:hover) .card_description{
+  opacity: 0%;
+  transition: 0.5s;
+  font-size: 2em;
+}
+.card_background:not(:hover) .card_title{
+  opacity: 100%;
+  transition: 0.5s;
+}
+
+.card{
+ text-align: center;
+ position:relative;
+}
+
+.card_title{
+  font-size: 2em;
+  text-align: right;
+  color:white;
+}
+
+
+
+.index_container{
+  background: #323c41;
+  color:white;
+  display: grid;
+  grid-template-columns: repeat(3, 25vw);
+  grid-template-rows: repeat(2, 25vh);
+}
+.index_container a:link{
+  text-decoration: none;
+  color:white;
+}
+
+/* .about_me, .project, .toy_project, .skills, .music, .others{
+  color:white;
+} */
+
+.about_me{
+  height:100vh;
+}
+
+.about_me ul{
+  list-style: none;
+  display: flex;
+  position: relative;
+}
+.my_photo1{
+  background-image: url("./CARAVAN.jpg");
+  width:50vw;
+  height:50vh;
+  background-size: cover;
+  background-position: center;
+}
+.my_photo2{
+  background-image: url("./KATUSA_COC.jpg");
+  width:50vw;
+  height:50vh;
+  background-size: cover;
+  background-position: center;
+}
+.my_photo3{
+  background-image: url("./KATUSA_COC2.jpg");
+  width:50vw;
+  height:50vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.project{
+  background-color: yellow;
+}
+
+.toy_project{
+  background-color: green;
+}
+
+.skills{
   background-color: blue;
 }
 
-/*# sourceMappingURL=index2_css.css.map */
+.music{
+  background-color: purple;
+}
+
+.others{
+  background-color: white;
+}
