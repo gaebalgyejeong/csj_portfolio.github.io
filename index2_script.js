@@ -35,3 +35,28 @@ function next_btn(){
 playConsole = setInterval(function(){
     next_btn()
 },3000);
+
+
+
+// document.getElementById("term_project_title").style.textDecorationColor="#D0BB57;";
+document.getElementById("term_project_content").style.visibility="visible";
+document.getElementById("capstone_design_content").style.visibility="hidden";
+
+
+function term_project_click(){
+    document.getElementById("term_project_content").style.visibility="visible";
+    document.getElementById("capstone_design_content").style.visibility="hidden";
+    console.log("1111111111");
+}
+
+function capstone_design_click(){
+    document.getElementById("term_project_content").style.visibility="hidden";
+    document.getElementById("capstone_design_content").style.visibility="visible";
+    console.log("1111111111");
+}
+
+// document.getElementById("term_project_title").onclick = term_project_click();
+// document.getElementById("capstone_design_title").onclick = capstone_design_click();
+
+document.getElementById("term_project_title").addEventListener("click", term_project_click());
+document.getElementById("capstone_design_title").addEventListener("click", capstone_design_click());

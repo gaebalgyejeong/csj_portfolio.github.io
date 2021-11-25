@@ -78,6 +78,7 @@ body{
   grid-template-columns: repeat(3, 25vw);
   grid-template-rows: repeat(2, 25vh);
   align-content: center;
+  width:100vw;
 }
 .index_container a:link{
   text-decoration: none;
@@ -94,6 +95,7 @@ body{
   color: white;
   text-align: center;
   font-size: 2em;
+  width:100vw;
 }
 
 .slide{
@@ -124,7 +126,60 @@ body{
 }
 
 .project{
-  background-color: yellow;
+  background: #323c41;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  width:100vw;
+}
+.portfolio_list{
+  text-align: center;
+  font-size: 0.5em;
+  margin-top: 30px;
+}
+#term_project_title{
+  
+}
+#capstone_design_title{
+  color:white;
+}
+.portfolio_image{
+  width:50vw;
+  height:auto;
+  position:absolute;
+  margin:10px;
+  left:0;
+}
+.portfolio_image img{
+  width:50vw;
+  height:auto;
+}
+.portfolio_description{
+  width:50vw;
+  height:auto;
+  position:absolute;
+  right:0;
+}
+.portfolio_description span{
+  font-size: 0.5em;
+  margin:20px;
+}
+.term_project_content{
+  width: 100vw;
+  height: 100vh;
+  position:relative;
+  margin-top:5vw;
+}
+.portfolio_specific_btn{
+  font-size: 0.5em;
+  width: 6em;
+  border-radius: 10%;
+  border: 1px solid #D0BB57;
+  left:50%;
+  bottom:0;
+  transform: translateX(-50%);
+  position: absolute;
 }
 
 .toy_project{
