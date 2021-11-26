@@ -125,13 +125,16 @@ body{
   font-size: 0.75em;
 }
 
+/* project / porfolio */
+
 .project{
   background: #323c41;
-  height: 100vh;
+  height: 100vw;
   color: white;
   text-align: center;
   font-size: 2em;
   width:100vw;
+  position:relative;
 }
 .portfolio_list{
   text-align: center;
@@ -139,10 +142,15 @@ body{
   margin-top: 30px;
 }
 #term_project_title{
-  
+  color: #D0BB57;
 }
 #capstone_design_title{
   color:white;
+}
+.portfolio_content_container{
+  top:30%;
+  position:absolute;
+  transform:translateY(-50%);
 }
 .portfolio_image{
   width:50vw;
@@ -164,23 +172,52 @@ body{
 .portfolio_description span{
   font-size: 0.5em;
   margin:20px;
+  display: block;
 }
+.portfolio_specific_btn a{
+  color:white;
+  text-decoration: unset;
+}
+
+/*  project.term_project  */
 .term_project_content{
   width: 100vw;
-  height: 100vh;
   position:relative;
   margin-top:5vw;
 }
 .portfolio_specific_btn{
   font-size: 0.5em;
-  width: 6em;
-  border-radius: 10%;
+  width: 7em;
+  border-radius: 20%;
   border: 1px solid #D0BB57;
   left:50%;
-  bottom:0;
+  bottom:0%;
   transform: translateX(-50%);
   position: absolute;
 }
+ /* project.capstone_design */
+
+
+ /* term_project modal */
+#term_project_modal{
+  background-color: blue;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  top:0;
+  left:0;
+  z-index: 10000;
+  position:fixed;
+  display:flex;
+  flex-direction: column;
+  overflow-y: initial !important;
+}
+
+#term_project_modal img{
+  width: 90vw;
+}
+
+ /* capstone_design modal */
 
 .toy_project{
   background-color: green;
